@@ -1,4 +1,0 @@
-method,split,accuracy,precision,recall,f1
-ml_classifier,validation,0.93775,1.0,0.7925,0.8842398884239888
-ml_classifier,test,0.9415,1.0,0.805,0.8919667590027701
-heuristic_hfa_like,test,0.7025,1.0,0.008333333333333333,0.01652892561983471
