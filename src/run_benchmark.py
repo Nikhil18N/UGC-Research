@@ -55,7 +55,10 @@ def main() -> None:
 
     metrics_df = train_and_evaluate(config, features_df, labels_df)
 
-    save_hot_cold_distribution(labels_df, "results/figures/hot_cold_distribution.png")
+    save_hot_cold_distribution(
+        labels_df,
+        config["paths"].get("hot_cold_distribution", "results/figures/hot_cold_distribution.png"),
+    )
 
     print("Benchmark completed.")
     print("Metrics summary:")

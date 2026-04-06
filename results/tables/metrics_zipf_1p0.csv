@@ -1,0 +1,4 @@
+method,split,accuracy,precision,recall,f1
+ml_classifier,validation,0.96775,0.9029345372460497,1.0,0.9489916963226572
+ml_classifier,test,0.965,0.8955223880597015,1.0,0.9448818897637795
+heuristic_hfa_like,test,0.70225,1.0,0.0075,0.01488833746898263

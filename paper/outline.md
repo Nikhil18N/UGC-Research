@@ -7,6 +7,7 @@
 5. Baseline: HFA-like rule-based classifier.
 6. Metrics: accuracy, precision, recall, F1, and estimated memory/query impact.
 7. Results: compare ML vs baseline under same workload.
-8. Discussion: overhead, interpretability, and deployment practicality.
-9. Threats to validity and limitations.
-10. Conclusion and future scope.
+8. Sensitivity analysis: effect of tuple Zipf exponent on prediction accuracy.
+9. Discussion: overhead, interpretability, and deployment practicality.
+10. Threats to validity and limitations.
+11. Conclusion and future scope.

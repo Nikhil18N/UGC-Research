@@ -22,6 +22,7 @@ This checklist matches the files included in this repository.
 - `src/baseline_hfa.py`
 - `src/train_model.py`
 - `src/run_benchmark.py`
+- `src/run_zipf_sensitivity.py`
 
 ## 3) Reproducibility Files
 - `requirements.txt`
@@ -38,3 +39,5 @@ This checklist matches the files included in this repository.
 - `results/figures/.gitkeep`
 - `results/tables/.gitkeep`
 - `results/model/.gitkeep`
+- `results/tables/zipf_sensitivity_accuracy.csv`
+- `results/figures/zipf_accuracy_trend.png`

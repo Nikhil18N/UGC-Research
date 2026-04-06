@@ -21,8 +21,12 @@ def generate_access_log(config: Dict[str, Any]) -> pd.DataFrame:
 
     rng = np.random.default_rng(seed)
 
-    tuple_probs = _zipf_probabilities(n_tuples, exponent=1.2)
-    column_probs = _zipf_probabilities(n_columns, exponent=1.1)
+    zipf_cfg = config.get("zipf", {})
+    tuple_exponent = float(zipf_cfg.get("tuple_exponent", 1.2))
+    column_exponent = float(zipf_cfg.get("column_exponent", 1.1))
+
+    tuple_probs = _zipf_probabilities(n_tuples, exponent=tuple_exponent)
+    column_probs = _zipf_probabilities(n_columns, exponent=column_exponent)
 
     tuple_ids = rng.choice(np.arange(n_tuples), size=n_transactions, p=tuple_probs)
     column_ids = rng.choice(np.arange(n_columns), size=n_transactions, p=column_probs)

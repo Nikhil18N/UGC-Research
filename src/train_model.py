@@ -181,8 +181,12 @@ def train_and_evaluate(
 
     model_path = pathlib.Path(config["paths"]["model"])
     metrics_path = pathlib.Path(config["paths"]["metrics"])
-    confusion_matrix_path = pathlib.Path("results/figures/confusion_matrix.png")
-    feature_importance_path = pathlib.Path("results/figures/feature_importance.png")
+    confusion_matrix_path = pathlib.Path(
+        config["paths"].get("confusion_matrix", "results/figures/confusion_matrix.png")
+    )
+    feature_importance_path = pathlib.Path(
+        config["paths"].get("feature_importance", "results/figures/feature_importance.png")
+    )
 
     model_path.parent.mkdir(parents=True, exist_ok=True)
     metrics_path.parent.mkdir(parents=True, exist_ok=True)

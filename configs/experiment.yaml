@@ -4,6 +4,11 @@ n_columns: 20
 n_transactions: 150000
 window_size: 2000
 
+zipf:
+  tuple_exponent: 1.2
+  column_exponent: 1.1
+  sweep_exponents: [0.8, 1.0, 1.2, 1.4, 1.6]
+
 split:
   test_size: 0.2
   val_size: 0.2
@@ -26,3 +31,6 @@ paths:
   labels: data/processed/labels.csv
   model: results/model/hot_cold_model.joblib
   metrics: results/tables/metrics_summary.csv
+  confusion_matrix: results/figures/confusion_matrix.png
+  feature_importance: results/figures/feature_importance.png
+  hot_cold_distribution: results/figures/hot_cold_distribution.png
