@@ -23,6 +23,7 @@ This checklist matches the files included in this repository.
 - `src/train_model.py`
 - `src/run_benchmark.py`
 - `src/run_zipf_sensitivity.py`
+- `src/generate_paper_figures.py`
 
 ## 3) Reproducibility Files
 - `requirements.txt`
@@ -41,3 +42,7 @@ This checklist matches the files included in this repository.
 - `results/model/.gitkeep`
 - `results/tables/zipf_sensitivity_accuracy.csv`
 - `results/figures/zipf_accuracy_trend.png`
+- `results/figures/figure2_dt_accuracy_vs_zipf.png`
+- `results/figures/figure3_pr_curve_workload_d.png`
+- `results/figures/figure4_dt_feature_importance.png`
+- `results/tables/figure4_feature_importance_rankings.csv`

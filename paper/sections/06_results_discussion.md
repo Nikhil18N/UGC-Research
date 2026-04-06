@@ -26,6 +26,13 @@ Observed trend:
 
 Trend plot: `results/figures/zipf_accuracy_trend.png`.
 
+### Figure Captions
+Fig. 2. DT classification accuracy vs. Zipf skew exponent theta for the 20,000-tuple workload. HFA heuristic baseline shown as a dashed line. (`results/figures/figure2_dt_accuracy_vs_zipf.png`)
+
+Fig. 3. Precision-Recall curves for DT (blue) and LR (green) on workload_D (50,000 tuples). (`results/figures/figure3_pr_curve_workload_d.png`)
+
+Fig. 4. Gini-based feature importances from the trained Decision Tree; access_freq and mean_gap are the most discriminative features. (`results/figures/figure4_dt_feature_importance.png`)
+
 ## Feature Insights
 `results/figures/feature_importance.png` indicates that recent access intensity and recency dominate predictive value, which is consistent with hotness intuition in in-memory access traces.
 

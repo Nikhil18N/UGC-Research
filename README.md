@@ -30,12 +30,26 @@ This sweep generates:
 - `results/tables/zipf_sensitivity_accuracy.csv`
 - `results/figures/zipf_accuracy_trend.png`
 
+## Paper Figure Generation
+```powershell
+python src/generate_paper_figures.py --config configs/experiment.yaml
+```
+
+This command generates:
+- `results/figures/figure2_dt_accuracy_vs_zipf.png`
+- `results/figures/figure3_pr_curve_workload_d.png`
+- `results/figures/figure4_dt_feature_importance.png`
+- `results/tables/figure4_feature_importance_rankings.csv`
+
 ## Key Output Artifacts
 - `results/tables/metrics_summary.csv`
 - `results/figures/confusion_matrix.png`
 - `results/figures/feature_importance.png`
 - `results/figures/hot_cold_distribution.png`
 - `results/figures/zipf_accuracy_trend.png`
+- `results/figures/figure2_dt_accuracy_vs_zipf.png`
+- `results/figures/figure3_pr_curve_workload_d.png`
+- `results/figures/figure4_dt_feature_importance.png`
 
 ## Suggested Paper Claim
 A lightweight supervised model can provide better hot/cold prediction than static heuristics while maintaining low CPU overhead for online tiering decisions in an in-memory DB setting.
