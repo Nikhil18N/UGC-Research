@@ -1,0 +1,28 @@
+random_seed: 42
+n_tuples: 20000
+n_columns: 20
+n_transactions: 150000
+window_size: 2000
+
+split:
+  test_size: 0.2
+  val_size: 0.2
+
+heuristic:
+  tuple_access_threshold: 5
+  column_access_threshold: 3
+
+model:
+  type: decision_tree # decision_tree or logistic_regression
+  max_depth: 6
+  min_samples_leaf: 50
+
+tiering:
+  hot_capacity_ratio: 0.30
+
+paths:
+  raw_access_log: data/raw/access_log.csv
+  features: data/processed/features.csv
+  labels: data/processed/labels.csv
+  model: results/model/hot_cold_model.joblib
+  metrics: results/tables/metrics_summary.csv
